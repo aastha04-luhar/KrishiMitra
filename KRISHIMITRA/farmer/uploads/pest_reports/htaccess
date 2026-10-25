@@ -1,0 +1,4 @@
+# Prevent uploaded files from being executed as scripts on Apache.
+php_flag engine off
+Options -ExecCGI
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8
